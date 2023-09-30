@@ -1,0 +1,32 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    background-color: #edeae9;
+    padding: 40px;
+    max-height: 800px;
+    overflow: auto;
+}
+.close  {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .modal {
+        max-height: 70vh;
+    }
+}

@@ -1,0 +1,44 @@
+.form {
+    padding: 20px;
+}
+
+.form h1 {
+    margin-bottom: 30px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.input-group label {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.input-group input {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border: 2px solid lightgray;
+}
+.input-group input:focus {
+    outline: none;
+}
+.form button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #ffb703;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.input-group input.invalid {
+    border: 2px solid red;
+}
+.error-text {
+    margin-top: 10px;
+    color: red;
+}
+.form button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}

@@ -1,0 +1,36 @@
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1140px;
+    margin-bottom: 50px;
+}
+.pagination-nav button{
+    padding: 8px 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffb703;
+}
+.pagination-nav button.active {
+    background-color: #ffb703;
+    color: #fff;
+}
+@media screen and (max-width:1160px) {
+    .cars {
+        width: 900px;
+    }
+}
+@media screen and (max-width:930px) {
+    .cars {
+        width: 600px;
+    }
+}
+@media screen and (max-width:620px) {
+    .cars {
+        width: 100%;
+    }
+}

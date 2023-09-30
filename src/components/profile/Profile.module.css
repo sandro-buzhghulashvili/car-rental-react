@@ -1,0 +1,51 @@
+.dashboard {
+    width: 50vw;
+    max-height: 60vh;
+    padding: 20px 40px;
+}
+.dashboard p {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+.dashboard button {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #ffb703;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.orders {
+    max-height: 50px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: 1s;
+    border-bottom: 3px solid black;
+}
+.toggle {
+    max-height: 2000px;
+}
+.orders span {
+    display: block;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.order {
+    margin-bottom: 70px;
+    border-bottom: 5px solid #fff;
+}
+.order p {
+    margin: 20px 0;
+}
+.dashboard .cancel {
+    padding: 10px 20px;
+    background-color: red;
+}
+@media screen and (max-width: 750px) {
+    .dashboard {
+        width: 75vw;
+    }
+}

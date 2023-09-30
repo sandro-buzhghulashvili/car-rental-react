@@ -1,0 +1,46 @@
+.main {
+    width: 75vw;
+    max-height: 80vh;
+}
+.main h2 {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+.zoom button {
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #ffb703;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.locations {
+    margin: 40px 0;
+}
+.locations p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.save {
+    padding: 10px 25px;
+    border: none;
+    background-color: #ffb703;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.error {
+    color: red;
+}
+.save:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}

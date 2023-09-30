@@ -1,0 +1,8 @@
+.header {
+    padding: 30px 60px;
+}
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 30px;
+    }
+}

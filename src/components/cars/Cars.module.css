@@ -1,0 +1,30 @@
+.cars {
+    display: flex;
+    padding: 30px 60px;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-direction: column;
+}
+.cars h2 {
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.764);
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.cars h2 span {
+    color: #ffb703;
+}
+@media screen and (max-width:491px) {
+    .cars {
+        padding: 20px;
+    }
+}
+.header {
+    padding: 30px 60px;
+}
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg, rgba(237,234,233,1) 35%, rgba(249,199,79,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #edeae9 */
+.mapboxgl-control-container {
+    display: none;
+}
