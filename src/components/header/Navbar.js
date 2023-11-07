@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
 import userContext from '../../store/user-context';
@@ -22,6 +21,18 @@ const Navbar = () => {
 
   const toggleNavHandler = () => {
     setToggleNav((prevValue) => !prevValue);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollToSection = (sectionId) => {
+    toggleNavHandler();
+
+    const section = document.getElementById(sectionId);
+
+    section.scrollIntoView({ behavior: 'smooth' });
   };
 
   const openOrCloseDashboard = () => {
@@ -91,25 +102,43 @@ const Navbar = () => {
         className={`${classes.nav} ${giveNavColor && classes.fill}`}
         onScroll={navScrollHandler}
       >
-        <h1>Drive Mate</h1>
+        <h1 onClick={scrollToTop}>Drive Mate</h1>
         <section
           className={`${classes['nav-control']} ${toggleNav && classes.toggle}`}
         >
           <ul>
             <li>
-              <NavLink to="/cars" onClick={toggleNavHandler} className={({isActive}) => isActive ? classes.active : undefined}>
+              <a
+                href="#1"
+                onClick={() => scrollToSection('cars')}
+                className={({ isActive }) =>
+                  isActive ? classes.active : undefined
+                }
+              >
                 Cars
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/why-us" onClick={toggleNavHandler} className={({isActive}) => isActive ? classes.active : undefined}>
+              <a
+                href="#1"
+                onClick={() => scrollToSection('whyChooseUs')}
+                className={({ isActive }) =>
+                  isActive ? classes.active : undefined
+                }
+              >
                 Why Choose us
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/feedback" onClick={toggleNavHandler} className={({isActive}) => isActive ? classes.active : undefined}>
+              <a
+                href="#1"
+                onClick={() => scrollToSection('aboutUs')}
+                className={({ isActive }) =>
+                  isActive ? classes.active : undefined
+                }
+              >
                 Feedback
-              </NavLink>
+              </a>
             </li>
           </ul>
           {!ctx.user ? (

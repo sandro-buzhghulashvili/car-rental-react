@@ -16,6 +16,7 @@
     background-color: #edeae9 ;
 }
 .nav h1 {
+    cursor: pointer;
     font-size: 2rem;
 }
 .nav-control {

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className={classes.header} id="home">
       <Navbar />
-      {/* <Introduction /> */}
+      <Introduction />
     </header>
   );
 };
